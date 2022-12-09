@@ -1,0 +1,35 @@
+package lesson3.step1.animals;
+
+public class Parrot extends Pet {
+    private boolean talking;
+    private String breed;
+
+    public Parrot(String name) {
+        super(name, 0);
+    }
+
+    public Parrot(String name, int age) {
+        super(name, age);
+    }
+
+    public void talk() {
+        super.talk();
+        System.out.println("Hello!");
+    }
+
+    public boolean isTalking() {
+        return talking;
+    }
+
+    public void setTalking(boolean talking) {
+        this.talking = talking;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+}
